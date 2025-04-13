@@ -1,0 +1,140 @@
+.img-fluid2{
+    position: relative;
+    width: 35%;
+    top: 20px;
+    left: 8%;
+    margin-block-end: -25%;
+}
+@media (max-width: 768px){
+    .img-fluid2{
+        position: relative;
+        width: 50%;
+        top: 80px;
+        left: 6%;
+        margin-block-end: -15%; 
+        font-family: 'Times New Roman', Times, serif; 
+    }
+}
+@media (max-width: 425px){
+    .img-fluid2{
+        position: relative;
+        width: 80%;
+        top: 110px;
+        left: 8%;
+        margin-block-end: -15%; 
+        font-family: 'Times New Roman', Times, serif; 
+    }
+}
+.texto-blog{
+    position: relative;
+    width: 35%;
+    bottom: 20px;
+    left: 53%;
+    padding: 3%;
+    font-family: 'Times New Roman', Times, serif;
+}
+@media (max-width: 768px){
+    .texto-blog{
+        position: relative;
+        width: 50%;
+        top: -160px;
+        left: 6%;
+        margin-block-end: -25%; 
+        font-family: 'Times New Roman', Times, serif; 
+    }
+}
+
+@media (max-width: 425px){
+    .texto-blog{
+        position: relative;
+        width: 90%;
+        top: -160px;
+        left: 6%;
+        margin-block-end: -25%; 
+        font-family: 'Times New Roman', Times, serif; 
+    }
+}
+@media (max-width: 320px){
+    .texto-blog{
+        width: 90%;
+        top: -130px;
+        left: 6%;
+        margin-block-end: -25%; 
+        font-family: 'Times New Roman', Times, serif; 
+    }
+}
+.text-abajo {
+    position: relative;
+    width: 40%;
+    bottom: 50px;
+    left: 50%;
+    padding: 3%;
+    font-family: 'Times New Roman', Times, serif;
+}
+@media (max-width: 768px){
+    .text-abajo{
+        bottom: 20px;
+        padding: 1%;
+        left: 57%;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+@media (max-width: 425px){
+    .text-abajo{
+        width: 90%;
+        top: 190px;
+        padding: 1%;
+        left: 5%;
+        margin-block-end: 50%; 
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+@media (max-width: 320px){
+    .text-abajo{
+        width: 90%;
+        top: 130px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+.img-fluid3{
+    position: relative;
+    width: 35%;
+    left: 30%;
+    top: auto;
+    margin-inline-start: 15%;
+}
+@media (max-width: 425px){
+    .img-fluid3{
+        width: 45%;
+        left: 15%;
+        bottom: 3%;
+    }
+}
+.img-fluid4{
+    position: relative;
+    width: 35%;
+    left: 15%;
+    top: auto;
+    margin-inline-start: 15%;
+}
+@media (max-width: 425px){
+    .img-fluid4{
+        width: 45%;
+        left: 15%;
+        bottom: 0%;
+    }
+}
+.img-fluid5{
+    position: relative;
+    width: 35%;
+    left:5%;
+    top: auto;
+    margin-inline-start: 15%;
+}
+@media (max-width: 425px){
+    .img-fluid5 {
+        width: 45%;
+        left: 15%;
+        bottom: -4%;
+    }
+}

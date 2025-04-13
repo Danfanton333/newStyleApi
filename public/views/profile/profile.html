@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../assets/css/profile.css">
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="container mt-5">
+        <!-- Encabezado de perfil en negro -->
+        <div class="cart bg-black text-white p-2 mb-1 rounded-top">
+            <h2 class="text-center">Mi Perfil</h2>
+        </div>
+
+        <!-- Formulario de perfil -->
+        <form id="profileForm" class="profile-container bg-light p-4 rounded-bottom shadow">
+            <!-- Nombre -->
+            <div class="mb-3 row align-items-center">
+                <label for="ProfileName" class="col-sm-4 col-form-label">Nombre:</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control bg-dark text-white small-input" id="ProfileName" name="ProfileName" readonly required>
+                </div>
+                <div class="col-sm-2">
+                    <button type="button" class="btn btn-sm btn-outline-secondary edit-btn" onclick="toggleEdit('ProfileName')">Editar</button>
+                </div>
+            </div>
+
+            <!-- Segundo Nombre -->
+            <div class="mb-3 row align-items-center">
+                <label for="ProfileName2" class="col-sm-4 col-form-label">Segundo Nombre:</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control bg-dark text-white small-input" id="ProfileName2" name="ProfileName2" readonly>
+                </div>
+                <div class="col-sm-2">
+                    <button type="button" class="btn btn-sm btn-outline-secondary edit-btn" onclick="toggleEdit('ProfileName2')">Editar</button>
+                </div>
+            </div>
+
+            <!-- Apellido -->
+            <div class="mb-3 row align-items-center">
+                <label for="ProfileLastName" class="col-sm-4 col-form-label">Apellido:</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control bg-dark text-white small-input" id="ProfileLastName" name="ProfileLastName" readonly required>
+                </div>
+                <div class="col-sm-2">
+                    <button type="button" class="btn btn-sm btn-outline-secondary edit-btn" onclick="toggleEdit('ProfileLastName')">Editar</button>
+                </div>
+            </div>
+
+            <!-- Segundo Apellido -->
+            <div class="mb-3 row align-items-center">
+                <label for="ProfileLastName2" class="col-sm-4 col-form-label">Segundo Apellido:</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control bg-dark text-white small-input" id="ProfileLastName2" name="ProfileLastName2" readonly>
+                </div>
+                <div class="col-sm-2">
+                    <button type="button" class="btn btn-sm btn-outline-secondary edit-btn" onclick="toggleEdit('ProfileLastName2')">Editar</button>
+                </div>
+            </div>
+
+            <!-- Tipo de Documento -->
+            <div class="mb-3 row align-items-center">
+                <label for="ProfileDocumentType" class="col-sm-4 col-form-label">Tipo de Documento:</label>
+                <div class="col-sm-6">
+                    <select class="form-select bg-dark text-white small-input" id="ProfileDocumentType" name="ProfileDocumentType" disabled required>
+                        <option value="DNI">DNI</option>
+                        <option value="Pasaporte">Pasaporte</option>
+                        <option value="Cédula">Cédula</option>
+                    </select>
+                </div>
+                <div class="col-sm-2">
+                    <button type="button" class="btn btn-sm btn-outline-secondary edit-btn" onclick="toggleEdit('ProfileDocumentType')">Editar</button>
+                </div>
+            </div>
+
+            <!-- Número de Documento -->
+            <div class="mb-3 row align-items-center">
+                <label for="ProfileNumberDocument" class="col-sm-4 col-form-label">Número de Documento:</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control bg-dark text-white small-input" id="ProfileNumberDocument" name="ProfileNumberDocument" readonly required>
+                </div>
+                <div class="col-sm-2">
+                    <button type="button" class="btn btn-sm btn-outline-secondary edit-btn" onclick="toggleEdit('ProfileNumberDocument')">Editar</button>
+                </div>
+            </div>
+
+            <!-- Correo Electrónico -->
+            <div class="mb-3 row align-items-center">
+                <label for="ProfileMail" class="col-sm-4 col-form-label">Correo Electrónico:</label>
+                <div class="col-sm-6">
+                    <input type="email" class="form-control bg-dark text-white small-input" id="ProfileMail" name="ProfileMail" readonly required>
+                </div>
+                <div class="col-sm-2">
+                    <button type="button" class="btn btn-sm btn-outline-secondary edit-btn" onclick="toggleEdit('ProfileMail')">Editar</button>
+                </div>
+            </div>
+
+            <!-- Teléfono -->
+            <div class="mb-3 row align-items-center">
+                <label for="ProfilePhone" class="col-sm-4 col-form-label">Teléfono:</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control bg-dark text-white small-input" id="ProfilePhone" name="ProfilePhone" readonly required>
+                </div>
+                <div class="col-sm-2">
+                    <button type="button" class="btn btn-sm btn-outline-secondary edit-btn" onclick="toggleEdit('ProfilePhone')">Editar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- FOOTER CON LOGOS Y TEXTO -->
+    <footer class="mt-auto bg-black text-white pt-4 pb-3">
+        <div class="container">
+            <div class="row align-items-center text-center text-md-start">
+                <!-- Logo principal y texto -->
+                <div class="col-md-4 mb-3 mb-md-0 d-flex align-items-center justify-content-center justify-content-md-start">
+                    <img src="../../assets/imgs/logo.jpg" alt="Logo" class="me-3" style="max-width: 60px; height: auto;">
+                </div>
+
+                <!-- Logos de redes sociales -->
+                <div class="col-md-4 mb-3 mb-md-0 d-flex justify-content-center gap-3">
+                    <img src="../../assets/imgs/Tik_tok_logo-removebg-preview.png" alt="TikTok Logo" class="img-fluid" style="max-width: 50px; height: auto;">
+                    <img src="../../assets/imgs/Instagram_logo-removebg-preview.png" alt="Instagram Logo" class="img-fluid" style="max-width: 50px; height: auto;">
+                    <img src="../../assets/imgs/Youtube_portada-removebg-preview.png" alt="YouTube Logo" class="img-fluid" style="max-width: 50px; height: auto;">
+                </div>
+
+                <!-- Texto adicional -->
+                <div class="col-md-4 text-center text-md-end">
+                    <h5 class="mb-1">My First Bootstrap Page</h5>
+                    <p class="mb-0">Resize this responsive page to see the effect!</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../../assets/js/profile.js"></script>
+</body>
+</html>

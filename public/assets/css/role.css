@@ -1,0 +1,58 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+/* Estilos para los botones de acción */
+.action-btn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-show {
+    background-color: #28a745; /* Verde claro */
+    color: white;
+}
+
+.btn-show:hover {
+    background-color: #218838; /* Verde más oscuro al hover */
+}
+
+.btn-edit {
+    background-color: #ffc107; /* Amarillo claro */
+    color: white;
+}
+
+.btn-edit:hover {
+    background-color: #e0a800; /* Amarillo más oscuro al hover */
+}
+
+.btn-delete {
+    background-color: #dc3545; /* Rojo claro */
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #bd2130; /* Rojo más oscuro al hover */
+}
+
+/* Estilo para el modal */
+.modal-body input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
